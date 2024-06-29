@@ -24,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> loadStudent() async {
-    students = await DatabaseService.fetchStudents();
+    students = await DatabaseService().fetchStudents();
     setState(() {});
   }
 
